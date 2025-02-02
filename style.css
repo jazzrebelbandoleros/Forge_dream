@@ -17,10 +17,6 @@ body {
   height: 100%;
 }
 
-.portfolio-item {
-  cursor: grab;
-}
-
 /* HEADER */
 
 .container {
@@ -37,21 +33,61 @@ header {
 }
 
 .logo-img {
-  margin-right: -350px;
-  display: flex;
-  margin-left: -300px;
+  width: 150px;
 }
 
-.logo-text {
-  margin-top: 20px;
-  margin-left: -500px;
+.open {
+  display: flex !important;
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-right: -300px;
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #faf6f2;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #fece1f;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
 }
 
 .menu a {
@@ -130,6 +166,7 @@ header {
 /* FOOTER */
 .services-group {
   height: 1600px;
+  cursor: grab;
 }
 
 .services-parag {
@@ -447,39 +484,31 @@ header {
 /* HERO MODELING */
 
 .modeling-block-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.modeling-div-title {
-  margin-bottom: 90px;
-  margin-top: 40px;
-  margin-right: 800px;
 }
 
 .modeling-parag-portfolio {
   font-size: 36px;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-left: 56px;
+  margin-bottom: 90px;
+  margin-top: 40px;
 }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 100%;
-  max-width: 1400px;
 }
 
 .portfolio-item {
-  width: 100%;
-  padding-top: 100%;
   background-color: #222;
   background-size: cover;
   background-position: center;
   border: 1px solid #fff;
+  cursor: grab;
+  width: 100%;
+  height: 400px;
 }
 
 .first-mod {
@@ -570,22 +599,22 @@ header {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 24px;
-  color: #000;
-  cursor: pointer;
+  font-size: 20px;
+  color: #fece1f;
+  cursor: grab;
   z-index: 1001;
 }
 .custom-next {
   position: absolute;
   top: 50%;
-  transform: translateX(-200%) translateY(275px);
+  transform: translateX(-200%) translateY(897%);
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   border: none;
   border-radius: 50%;
   width: 35px;
   height: 35px;
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
   z-index: 10;
   outline: none;
@@ -594,14 +623,14 @@ header {
 .custom-prev {
   position: absolute;
   top: 50%;
-  transform: translateX(200%) translateY(275px);
+  transform: translateX(200%) translateY(897%);
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   border: none;
   border-radius: 50%;
   width: 35px;
   height: 35px;
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
   z-index: 10;
   outline: none;
@@ -1015,36 +1044,34 @@ input[type="radio"] {
 @media screen and (min-width: 950px) and (max-width: 1200px) {
   /* HEADER */
 
-  .container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .logo-img {
-    margin-right: -210px;
-    display: flex;
+    transform: translate(125%, -10%);
   }
 
   .menu {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    transform: translate(100%, 5%);
+    transform: translate(40%, 5%);
+  }
+
+  .title-hero {
+    font-size: 45px;
+    transform: translate(29%, 10%);
+  }
+
+  .highlight {
+    color: #fece1f;
+    font-size: 45px;
+    margin-top: -35px;
+    transform: translate(29%, -10%);
   }
 
   .hero-parag {
     font-size: 16px;
     color: #fff;
     padding-left: 750px;
-    transform: translate(3%, 80%);
+    transform: translate(25%, 80%);
     width: 300px;
   }
 
@@ -1052,6 +1079,7 @@ input[type="radio"] {
     border-radius: 50px;
     margin-top: -160px;
     width: 702px;
+    margin-left: 210px;
   }
 
   .socials {
@@ -1060,7 +1088,7 @@ input[type="radio"] {
     flex-direction: column;
     float: right;
     margin-top: -120px;
-    transform: translate(150%, -15%);
+    transform: translate(165%, -15%);
     width: 500px;
     height: 160px;
   }
@@ -1069,43 +1097,82 @@ input[type="radio"] {
   .services-group {
     height: 1600px;
     width: 1300px;
-    transform: translate(5%, 0%);
+    transform: translate(17%, 0%);
   }
 }
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
   /* HEADER */
 
-  .container {
-    width: 1500px;
-    margin: 0 auto;
-    padding: 30px;
-  }
+  /* .line {
+    display: block;
+  } */
 
-  .logo-img {
-    margin-right: -460px;
+  .burger {
     display: flex;
+    transform: translate(1550%, -10%);
   }
 
   .menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    transform: translate(90%, 5%);
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: black;
+    animation: burgerAnimation 0.4s;
+  }
+
+  .nav a {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  @keyframes burgerAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .hero-parag {
     font-size: 16px;
     color: #fff;
     padding-left: 750px;
-    transform: translate(3%, 80%);
+    transform: translate(30%, 160%);
     width: 300px;
+  }
+
+  .logo-img {
+    transform: translate(165%, -10%);
+  }
+
+  .title-hero {
+    font-size: 45px;
+    transform: translate(47%, 10%);
+  }
+
+  .highlight {
+    color: #fece1f;
+    font-size: 45px;
+    margin-top: -35px;
+    transform: translate(48%, -10%);
   }
 
   .image video {
     border-radius: 50px;
     margin-top: -160px;
     width: 720px;
+    margin-left: 260px;
   }
 
   .socials {
@@ -1114,7 +1181,7 @@ input[type="radio"] {
     flex-direction: column;
     float: right;
     margin-top: -120px;
-    transform: translate(150%, -15%);
+    transform: translate(205%, -15%);
     width: 500px;
     height: 160px;
   }
@@ -1123,7 +1190,7 @@ input[type="radio"] {
   .services-group {
     height: 1600px;
     width: 1300px;
-    transform: translate(3%, 0%);
+    transform: translate(22%, 0%);
   }
 }
 
@@ -1149,10 +1216,10 @@ input[type="radio"] {
     background-repeat: no-repeat;
   }
 
-  .modeling-parag-portfolio {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px;
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
@@ -1177,20 +1244,10 @@ input[type="radio"] {
     background-repeat: no-repeat;
   }
 
-  .modeling-parag-portfolio {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transform: translate(60%, 0%);
-  }
-
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    transform: translate(5%, 0%);
   }
 }
 
@@ -1202,13 +1259,6 @@ input[type="radio"] {
     width: 100px;
     height: 90px;
   }
-
-  .modeling-parag-portfolio {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transform: translate(60%, 0%);
-  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
@@ -1217,13 +1267,6 @@ input[type="radio"] {
     transform: translate(500%, -230%);
     width: 100px;
     height: 90px;
-  }
-
-  .modeling-parag-portfolio {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transform: translate(130%, 0%);
   }
 }
 

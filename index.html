@@ -10,20 +10,8 @@
     <!-- HEADER -->
     <div class="container">
       <header>
-        <img
-          class="logo-img"
-          src="img/logo1.svg"
-          alt="logo"
-          width="50"
-          height="50"
-        />
-        <img
-          class="logo-text"
-          src="img/Text_ForgeDream 3.svg"
-          alt="Forge Dream"
-          width="160"
-          height="110"
-        />
+        <img class="logo-img" src="img/logo.svg" alt="logo" />
+
         <nav class="menu">
           <a href="uiux.html">UI / UX</a>
           <a href="modeling.html">MODELING</a>
@@ -33,6 +21,11 @@
           <a href="level.html">LEVEL DESIGN</a>
           <a href="concept.html">CONCEPT ART</a>
         </nav>
+
+        <!-- Иконка бургерменю -->
+        <div class="burger">
+          <span></span>
+        </div>
       </header>
 
       <!-- HERO -->
@@ -51,7 +44,17 @@
           </p>
         </div>
         <div class="image">
-          <video src="img/Tyanvid.mp4" autoplay muted preload loop></video>
+          <!-- <video src="img/Tyanvid.mp4" autoplay muted preload loop></video> -->
+          <!-- <video
+            src="https://www.youtube.com/embed/li_9PBrcOcQ?autoplay=1&showinfo=0"
+          ></video> -->
+
+          <iframe
+            src="https://drive.google.com/file/d/1VaBEPzrlwlN0AJOpRo2YC2AqIx4J5uEh/preview"
+            width="640"
+            height="360"
+            frameborder="0"
+          ></iframe>
         </div>
         <div class="socials">
           <a href="https://www.artstation.com/forgedream"
@@ -78,47 +81,102 @@
         <p class="services-parag">SERVICES</p>
         <div
           onclick="javascript:location.href='modeling.html';"
-          class="first-block"
+          class="line first-block"
         >
           <p class="modeling-block">MODELING</p>
         </div>
         <div
           onclick="javascript:location.href='environment.html';"
-          class="second-block"
+          class="line second-block"
         >
           <p class="environment-block">ENVIRONMENT ART</p>
         </div>
         <div
           onclick="javascript:location.href='cinematic.html';"
-          class="third-block"
+          class="line third-block"
         >
           <p class="cinematic-block">CINEMATIC</p>
         </div>
         <div
           onclick="javascript:location.href='vfx.html';"
-          class="fourth-block"
+          class="line fourth-block"
         >
           <p class="vfx-block">VFX</p>
         </div>
         <div
           onclick="javascript:location.href='level.html';"
-          class="fifth-block"
+          class="line fifth-block"
         >
           <p class="level-block">LEVEL DESIGN</p>
         </div>
         <div
           onclick="javascript:location.href='concept.html';"
-          class="sixth-block"
+          class="line sixth-block"
         >
           <p class="concept-block">CONCEPT ART</p>
         </div>
         <div
           onclick="javascript:location.href='uiux.html';"
-          class="seventh-block"
+          class="line seventh-block"
         >
           <p class="uiux-block">UI / UX</p>
         </div>
       </footer>
+      <!-- <footer class="services-group container">
+        <h2 class="services-parag">SERVICES</h2>
+        <div class="portfolio-grid">
+          <div
+            onclick="javascript:location.href='modeling.html';"
+            class="line first-block portfolio-item"
+          >
+            <p class="modeling-block">MODELING</p>
+          </div>
+          <div
+            onclick="javascript:location.href='environment.html';"
+            class="line second-block portfolio-item"
+          >
+            <p class="environment-block">ENVIRONMENT ART</p>
+          </div>
+          <div
+            onclick="javascript:location.href='cinematic.html';"
+            class="line third-block portfolio-item"
+          >
+            <p class="cinematic-block">CINEMATIC</p>
+          </div>
+          <div
+            onclick="javascript:location.href='vfx.html';"
+            class="line fourth-block portfolio-item"
+          >
+            <p class="vfx-block">VFX</p>
+          </div>
+          <div
+            onclick="javascript:location.href='level.html';"
+            class="line fifth-block portfolio-item"
+          >
+            <p class="level-block">LEVEL DESIGN</p>
+          </div>
+          <div
+            onclick="javascript:location.href='concept.html';"
+            class="line sixth-block portfolio-item"
+          >
+            <p class="concept-block">CONCEPT ART</p>
+          </div>
+          <div
+            onclick="javascript:location.href='uiux.html';"
+            class="line seventh-block portfolio-item"
+          >
+            <p class="uiux-block">UI / UX</p>
+          </div>
+        </div>
+      </footer> -->
     </div>
+
+    <!-- Подключение бургера -->
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".menu").classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
