@@ -1482,7 +1482,7 @@ input[type="radio"] {
   .modeling-parag {
     position: absolute;
     left: 4%;
-    bottom: 35%;
+    bottom: 15%;
   }
 
   .modeling-parag-portfolio {
@@ -1514,7 +1514,7 @@ input[type="radio"] {
   .environment-block {
     display: flex;
     font-size: 20px;
-    transform: translate(19%, 490%);
+    transform: translate(20%, 490%);
   }
 
   .cinematic-block {
@@ -1530,7 +1530,7 @@ input[type="radio"] {
   .level-block {
     display: flex;
     font-size: 20px;
-    transform: translate(28%, 460%);
+    transform: translate(29%, 460%);
   }
   .concept-block {
     display: flex;
