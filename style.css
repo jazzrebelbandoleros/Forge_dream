@@ -1589,7 +1589,7 @@ input[type="radio"] {
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
   .env-title-1 {
-    font-size: 45px;
+    font-size: 25px;
     position: absolute;
     right: 2%;
     top: -1%;
@@ -1607,7 +1607,7 @@ input[type="radio"] {
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
   .level-title {
-    font-size: 45px;
+    font-size: 25px;
     position: absolute;
     right: 2%;
     top: -1%;
@@ -1625,7 +1625,7 @@ input[type="radio"] {
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
   .concept-title {
-    font-size: 45px;
+    font-size: 25px;
     position: absolute;
     right: 2%;
     top: -1%;
@@ -1643,7 +1643,7 @@ input[type="radio"] {
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
   .cin-title {
-    font-size: 45px;
+    font-size: 30px;
     position: absolute;
     right: 2%;
     top: -1%;
@@ -1661,7 +1661,7 @@ input[type="radio"] {
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
   .uiux-title {
-    font-size: 45px;
+    font-size: 25px;
     position: absolute;
     right: 2%;
     top: -1%;
@@ -1679,7 +1679,7 @@ input[type="radio"] {
 
 @media screen and (min-width: 360px) and (max-width: 950px) {
   .vfx-title {
-    font-size: 45px;
+    font-size: 35px;
     position: absolute;
     right: 2%;
     top: -1%;
