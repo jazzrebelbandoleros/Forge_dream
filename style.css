@@ -13,7 +13,7 @@ body {
 
 .slick-slide img {
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .slick-slider .slick-track,
@@ -80,7 +80,6 @@ header {
   bottom: 0;
 }
 
-/* Добавляем класс active для анимации иконки бургера */
 .burger.active span {
   transform: scale(0);
 }
@@ -193,11 +192,11 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/modeling.jpg");
+  background-image: url("img/services/blocks/modeling.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s ease; /* Плавное появление/исчезновение */
+  transition: opacity 1s ease;
   filter: brightness(60%);
 }
 
@@ -224,11 +223,11 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/environmentart.jpg");
+  background-image: url("img/services/blocks/environmentart.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s ease; /* Плавное появление/исчезновение */
+  transition: opacity 1s ease;
   filter: brightness(60%);
 }
 
@@ -255,11 +254,11 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/cinematic.jpg");
+  background-image: url("img/services/blocks/cinematic.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s ease; /* Плавное появление/исчезновение */
+  transition: opacity 1s ease;
   filter: brightness(60%);
 }
 
@@ -285,11 +284,11 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/vfx.jpg");
+  background-image: url("img/services/blocks/vfx.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s ease; /* Плавное появление/исчезновение */
+  transition: opacity 1s ease;
   filter: brightness(60%);
 }
 
@@ -316,11 +315,11 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/leveldesign.jpg");
+  background-image: url("img/services/blocks/leveldesign.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s ease; /* Плавное появление/исчезновение */
+  transition: opacity 1s ease;
   filter: brightness(60%);
 }
 
@@ -347,11 +346,11 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/conceptart.jpg");
+  background-image: url("img/services/blocks/conceptart.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s ease; /* Плавное появление/исчезновение */
+  transition: opacity 1s ease;
   filter: brightness(60%);
 }
 
@@ -378,11 +377,11 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/uiux.jpg");
+  background-image: url("img/services/blocks/uiux.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s ease; /* Плавное появление/исчезновение */
+  transition: opacity 1s ease;
   filter: brightness(60%);
 }
 
@@ -466,7 +465,7 @@ header {
 }
 
 .modeling {
-  background-image: url("img/modeling-title.jpg");
+  background-image: url("img/modeling/modeling-title.jpg");
 }
 
 /* HERO MODELING */
@@ -502,56 +501,56 @@ header {
 }
 
 .first-mod {
-  background-image: url("img/first-mod.jpg");
+  background-image: url("img/modeling/1/first-mod.jpg");
 }
 
 .second-mod {
-  background-image: url("img/second-mod.jpg");
+  background-image: url("img/modeling/2/second-mod.jpg");
 }
 
 .third-mod {
-  background-image: url("img/third-mod.jpg");
+  background-image: url("img/modeling/3/third-mod.jpg");
 }
 
 .fourth-mod {
-  background-image: url("img/fourth-mod.jpg");
+  background-image: url("img/modeling/4/fourth-mod.jpg");
 }
 
 .fifth-mod {
-  background-image: url("img/fifth-mod.jpg");
+  background-image: url("img/modeling/5/fifth-mod.jpg");
 }
 
 .sixth-mod {
-  background-image: url("img/sixth-mod.jpg");
+  background-image: url("img/modeling/6/sixth-mod.jpg");
 }
 
 .seventh-mod {
-  background-image: url("img/seventh-mod.jpg");
+  background-image: url("img/modeling/7/seventh-mod.jpg");
 }
 
 .eighth-mod {
-  background-image: url("img/eighth-mod.jpg");
+  background-image: url("img/modeling/8/eighth-mod.jpg");
 }
 
 .ninth-mod {
-  background-image: url("img/ninth-mod.jpg");
+  background-image: url("img/modeling/9/ninth-mod.jpg");
 }
 
 .tenth-mod {
-  background-image: url("img/tenth-mod.jpg");
+  background-image: url("img/modeling/10/tenth-mod.jpg");
 }
 
 .eleventh-mod {
-  background-image: url("img/eleventh-mod.jpg");
+  background-image: url("img/modeling/11/eleventh-mod.jpg");
 }
 
 .twelfth-mod {
-  background-image: url("img/twelfth-mod.jpg");
+  background-image: url("img/modeling/12/twelfth-mod.jpg");
 }
 
 /* Модальное окно */
 .modal {
-  display: none; /* Скрыто по умолчанию */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -627,11 +626,11 @@ header {
 }
 
 .custom-prev {
-  left: -50px; /* Расположение слева */
+  left: -50px;
 }
 
 .custom-next {
-  right: -50px; /* Расположение справа */
+  right: -50px;
 }
 
 .custom-prev:hover,
@@ -742,7 +741,7 @@ input[type="radio"] {
 /* ENVIRONMENT ART */
 
 .env {
-  background-image: url("img/environment-title.jpg");
+  background-image: url("img/env/environment-title.jpg");
 }
 
 .env-title-1 {
@@ -759,49 +758,49 @@ input[type="radio"] {
 }
 
 .first-env {
-  background-image: url("img/first-env.jpg");
+  background-image: url("img/env/1/first-env.jpg");
 }
 
 .second-env {
-  background-image: url("img/second-env.jpg");
+  background-image: url("img/env/2/second-env.jpg");
 }
 
 .third-env {
-  background-image: url("img/third-env.jpg");
+  background-image: url("img/env/3/third-env.jpg");
 }
 
 .fourth-env {
-  background-image: url("img/fourth-env.jpg");
+  background-image: url("img/env/4/fourth-env.jpg");
 }
 
 .fifth-env {
-  background-image: url("img/fifth-env.jpg");
+  background-image: url("img/env/5/fifth-env.jpg");
 }
 
 .sixth-env {
-  background-image: url("img/sixth-env.jpg");
+  background-image: url("img/env/6/sixth-env.jpg");
 }
 
 .seventh-env {
-  background-image: url("img/seventh-env.jpg");
+  background-image: url("img/env/7/seventh-env.jpg");
 }
 
 .eighth-env {
-  background-image: url("img/eighth-env.jpg");
+  background-image: url("img/env/8/eighth-env.jpg");
 }
 
 .ninth-env {
-  background-image: url("img/ninth-env.jpg");
+  background-image: url("img/env/9/ninth-env.jpg");
 }
 
 .tenth-env {
-  background-image: url("img/tenth-env.jpg");
+  background-image: url("img/env/10/tenth-env.jpg");
 }
 
 /* CINEMATIC */
 
 .cin {
-  background-image: url("img/cin-title.jpg");
+  background-image: url("img/cin/cin-title.jpg");
 }
 
 .cin-parag {
@@ -818,33 +817,33 @@ input[type="radio"] {
 }
 
 .first-cin {
-  background-image: url("img/first-cin.jpg");
+  background-image: url("img/cin/1/first-cin.jpg");
 }
 
 .second-cin {
-  background-image: url("img/second-sin.jpg");
+  background-image: url("img/cin/2/second-sin.jpg");
 }
 
 .third-cin {
-  background-image: url("img/third-cin.jpg");
+  background-image: url("img/cin/3/third-cin.jpg");
 }
 
 .fourth-cin {
-  background-image: url("img/fourth-cin.jpg");
+  background-image: url("img/cin/4/fourth-cin.jpg");
   background-size: 400px;
 }
 
 .fifth-cin {
-  background-image: url("img/fifth-cin.jpg");
+  background-image: url("img/cin/5/fifth-cin.jpg");
 }
 
 .sixth-cin {
-  background-image: url("img/sixth-cin.jpg");
+  background-image: url("img/cin/6/sixth-cin.jpg");
 }
 
 /* VFX */
 .vfx {
-  background-image: url("img/vfx-title.jpg");
+  background-image: url("img/vfx/vfx-title.jpg");
 }
 
 .video-slider {
@@ -867,60 +866,60 @@ input[type="radio"] {
 }
 
 .first-vfx {
-  background-image: url("img/first-vfx.jpg");
+  background-image: url("img/vfx/1/first-vfx.jpg");
 }
 
 .second-vfx {
-  background-image: url("img/second-vfx.jpg");
+  background-image: url("img/vfx/2/second-vfx.jpg");
 }
 
 .third-vfx {
-  background-image: url("img/third-vfx.jpg");
+  background-image: url("img/vfx/3/third-vfx.jpg");
 }
 
 .fourth-vfx {
-  background-image: url("img/fourth-vfx.jpg");
+  background-image: url("img/vfx/4/fourth-vfx.jpg");
 }
 
 .fifth-vfx {
-  background-image: url("img/fifth-vfx.jpg");
+  background-image: url("img/vfx/5/fifth-vfx.jpg");
 }
 
 .sixth-vfx {
-  background-image: url("img/sixth-vfx.jpg");
+  background-image: url("img/vfx/6/sixth-vfx.jpg");
 }
 
 .seventh-vfx {
-  background-image: url("img/seventh-vfx.jpg");
+  background-image: url("img/vfx/7/seventh-vfx.jpg");
 }
 
 .eighth-vfx {
-  background-image: url("img/eighth-vfx.jpg");
+  background-image: url("img/vfx/8/eighth-vfx.jpg");
 }
 
 .ninth-vfx {
-  background-image: url("img/ninth-vfx.jpg");
+  background-image: url("img/vfx/9/ninth-vfx.jpg");
 }
 
 .tenth-vfx {
-  background-image: url("img/tenth-vfx.jpg");
+  background-image: url("img/vfx/10/tenth-vfx.jpg");
 }
 
 .eleventh-vfx {
-  background-image: url("img/eleventh-vfx.jpg");
+  background-image: url("img/vfx/11/eleventh-vfx.jpg");
 }
 
 .twelfth-vfx {
-  background-image: url("img/twelfth-vfx.jpg");
+  background-image: url("img/vfx/12/twelfth-vfx.jpg");
 }
 
 .thirteenth-vfx {
-  background-image: url("img/thirteenth-vfx.jpg");
+  background-image: url("img/vfx/13/thirteenth-vfx.jpg");
 }
 
 /* Level Design */
 .level {
-  background-image: url("img/level-title.jpg");
+  background-image: url("img/leveld/level-title.jpg");
 }
 
 .level-parag {
@@ -937,17 +936,17 @@ input[type="radio"] {
 }
 
 .first-level {
-  background-image: url("img/first-level.jpg");
+  background-image: url("img/leveld/1/first-level.jpg");
 }
 
 .second-level {
-  background-image: url("img/second-level.jpg");
+  background-image: url("img/leveld/2/second-level.jpg");
 }
 
 /* Concept Art */
 
 .concept {
-  background-image: url("img/concept-title.jpg");
+  background-image: url("img/concept/concept-title.jpg");
 }
 
 .concept-parag {
@@ -964,48 +963,48 @@ input[type="radio"] {
 }
 
 .first-concept {
-  background-image: url("img/first-concept.jpg");
+  background-image: url("img/concept/1/first-concept.jpg");
 }
 
 .second-concept {
-  background-image: url("img/second-concept.jpg");
+  background-image: url("img/concept/2/second-concept.jpg");
 }
 
 .third-concept {
-  background-image: url("img/third-concept.jpg");
+  background-image: url("img/concept/3/third-concept.jpg");
 }
 
 .fourth-concept {
-  background-image: url("img/fourth-concept.jpg");
+  background-image: url("img/concept/4/fourth-concept.jpg");
 }
 
 .fifth-concept {
-  background-image: url("img/fifth-concept.jpg");
+  background-image: url("img/concept/5/fifth-concept.jpg");
 }
 
 .sixth-concept {
-  background-image: url("img/sixth-concept.jpg");
+  background-image: url("img/concept/6/sixth-concept.jpg");
 }
 
 .seventh-concept {
-  background-image: url("img/seventh-concept.jpg");
+  background-image: url("img/concept/7/seventh-concept.jpg");
 }
 
 .eighth-concept {
-  background-image: url("img/eighth-concept.jpg");
+  background-image: url("img/concept/8/eighth-concept.jpg");
 }
 
 .ninth-concept {
-  background-image: url("img/ninth-concept.jpg");
+  background-image: url("img/concept/9/ninth-concept.jpg");
 }
 
 .tenth-concept {
-  background-image: url("img/tenth-concept.jpg");
+  background-image: url("img/concept/10/tenth-concept.jpg");
 }
 
 /* UI/UX */
 .uiux {
-  background-image: url("img/uiux-title.jpg");
+  background-image: url("img/uiux/uiux-title.jpg");
 }
 
 .uiux-parag {
@@ -1023,11 +1022,11 @@ input[type="radio"] {
 }
 
 .first-uiux {
-  background-image: url("img/first-uiux.jpg");
+  background-image: url("img/uiux/1/first-uiux.jpg");
 }
 
 .second-uiux {
-  background-image: url("img/second-uiux.jpg");
+  background-image: url("img/uiux/2/second-uiux.jpg");
 }
 
 /* Adaptive */
